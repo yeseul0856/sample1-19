@@ -1,14 +1,11 @@
 function Body() {
-  const numA = 1;
-  const numB = 2;
-  return (
-    <div>
-      <h1>본문</h1>
-      <h2>
-        numA + numB {numA} {numB} {numA + numB}
-      </h2>
-    </div>
-  );
+  const num = 200;
+
+  if (num % 2 === 0) {
+    return <div>{num}은 짝수입니다</div>;
+  } else {
+    return <div>{num}은 홀수입니다</div>;
+  }
 }
 
 export default Body;
